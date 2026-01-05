@@ -1,0 +1,72 @@
+/* ===== MODAL ===== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2,6,23,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #020617;
+  padding: 35px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  color: #e5e7eb;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  animation: modalFade 0.4s ease;
+}
+
+@keyframes modalFade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close-btn {
+  font-size: 28px;
+  color: #94a3b8;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #38bdf8;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  color: #cbd5f5;
+}
+
+.modal-content h4 {
+  margin-bottom: 10px;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-content ul li {
+  padding: 6px 0;
+  color: #cbd5f5;
+}
